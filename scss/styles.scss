@@ -1,6 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-size: 18px;
   color: #000;
+}
+
+body,
+html {
+  font-family: 'Unica One', cursive !important;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, code, pre {
+  pointer-events: none !important;
+}
+
+#wrap-wrap {
+  background: #000;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 30%;
+    width: 30%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+    z-index: 1;
+  }
 }

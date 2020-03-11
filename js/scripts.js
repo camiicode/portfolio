@@ -1,1 +1,1 @@
-alert('Estable');
+console.log('Estable');
