@@ -5,6 +5,7 @@
     <meta charset='utf-8' />
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' />
+    <link rel="icon" type="image/png" href="./media/logo/logo.png">
     <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet' />
     <link href='https://coredeiv.github.io/bootstraplus/css/bootstraplus.min.css' rel='stylesheet' />
     <link rel='stylesheet' href='css/styles.css' />
@@ -13,7 +14,7 @@
     
     <div id="wrap-wrap" class="vh-100 w-100 overflow-hidden position-relative">
 
-      <section id="main-content" class="w-100 h-100 bg-wave">
+      <section id="main-content" class="w-100 h-100 bg-wave position-relative">
         <div class="container h-100">
           <div class="row d-flex jc-center ai-center h-100">
             <div class="col-md-12">              
@@ -45,6 +46,9 @@
             </div>
           </div>
         </div>
+        <section id="logo" class="position-absolute top-0 left-0 m-4">
+          <img src="./media/logo/logo.png" alt="" class="img img-fluid w-10">
+        </section>
       </section>
 
       <section id="page_me" class="position-absolute w-100 vh-100 bg-light bottom-100 left-0 transition overflow-y-scroll">
@@ -122,13 +126,19 @@
             </div>            
           </div>
 
-          <div class="row position-absolute top-0 left-0 ml-1 mt-1">
+          <div class="row position-absolute top-0 left-0 ml-2 mt-3">
             <div class="col">
-              <a href="#" class="fz-2rem btn btn-link transition" id="get-page_me"><i class="fas fa-chevron-left text-muted"></i></a>
+              <a href="#" class="transition" id="get-page_me"><img src="./media/logo/logo.png" alt="img-logo" class="img img-fluid w-10 shadow-png-hover transition"></a>
             </div>
           </div>
 
         </div>
+      </section>
+
+      <section id="fullscreen" class="position-fixed bottom-0 right-0 z-index-100 text-muted">
+        <a href="#" onclick="fullscreen()" class="btn btn-link cursor-pointer text-muted m-4">
+          <i class="fas fa-expand text-muted d-block"></i>
+        </a>
       </section>
 
     </div>
