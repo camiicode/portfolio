@@ -15,6 +15,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
     
   }
 
+  const my_projects = document.getElementById("my-projects");
+  const get_my_projects = document.querySelectorAll("#get-page_projects");
+
+  for (let i = 0; i < get_my_projects.length; i++) {
+
+    get_my_projects[i].addEventListener("click", function (e) {
+
+      e.preventDefault();
+      my_projects.classList.toggle('left-0-important');
+      console.log('Estable');
+
+    });
+    
+  }
+
 });
 
 function fullscreen() {
@@ -37,4 +52,12 @@ function fullscreen() {
       document.webkitCancelFullScreen();
     }
   }
+}
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
