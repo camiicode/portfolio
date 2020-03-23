@@ -5,16 +5,9 @@
 
 body,
 html {
-  font-size: 18px; }
-
-body {
+  font-size: 18px;
+  font-family: 'Unica One', sans-serif, serif !important;
   scroll-behavior: smooth !important; }
-
-h1, h1 span, h2, h3, h4, h5, h6, li a {
-  font-family: 'Unica One', sans-serif, serif !important; }
-
-p, span {
-  font-family: 'montserrat', sans-serif, serif; }
 
 h1, h2, h3, h4, h5, h6, p, span, code, pre {
   pointer-events: none !important; }
@@ -42,6 +35,69 @@ p a {
   background-position: center;
   width: 100%;
   height: 100%; }
+#wrap-wrap #my-projects {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../media/img/bg-projects.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%; }
+
+#wrap-wrap #side-nav-projects .title-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  #wrap-wrap #side-nav-projects .title-label .tag-label {
+    transition: .3s;
+    transition-delay: .3s;
+    background: #000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 2; }
+    #wrap-wrap #side-nav-projects .title-label .tag-label .content {
+      padding: 1%; }
+      #wrap-wrap #side-nav-projects .title-label .tag-label .content p {
+        color: #f1f1f1;
+        margin: 0; }
+  #wrap-wrap #side-nav-projects .title-label .btn-label .content {
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+    margin-right: -38px;
+    background: #000;
+    height: auto;
+    width: 35px;
+    text-align: center;
+    padding: 30px 50px 0px 10px;
+    transform: rotate(45deg); }
+    #wrap-wrap #side-nav-projects .title-label .btn-label .content svg {
+      transform: rotate(-45deg);
+      color: #f1f1f1;
+      z-index: 4; }
+#wrap-wrap #side-nav-projects:hover .links-label {
+  width: 250px; }
+#wrap-wrap #side-nav-projects:hover .title-label .tag-label,
+#wrap-wrap #side-nav-projects:hover .title-label .btn-label {
+  opacity: 0;
+  transition: .5s; }
+#wrap-wrap #side-nav-projects .links-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #000;
+  height: 100%;
+  width: 0px;
+  overflow: hidden;
+  transition: ease .5s;
+  transition-delay: .05s; }
+
 #wrap-wrap #my-projects #menu-button a {
   display: block; }
   #wrap-wrap #my-projects #menu-button a div {

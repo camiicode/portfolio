@@ -1,58 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-}
+@import "_globals.scss";
+@import "_bem.scss";
 
-body,
-html {
-  font-size: 18px;
-}
+@import "_bg-images.scss";
 
-body {
-  scroll-behavior: smooth !important;
-}
+@import "_side-nav.scss";
 
-h1, h1 span, h2, h3, h4, h5, h6, li a {
-  font-family: 'Unica One', sans-serif, serif !important;
-}
-p, span {
-  font-family: 'montserrat', sans-serif, serif;
-}
-h1, h2, h3, h4, h5, h6, p, span, code, pre {
-  pointer-events: none !important;
-}
-p a {
-  pointer-events: visible;
-}
-.small-lead {
-  font-size: .8rem;
-}
-.ws-none {
-  white-space: nowrap;
-}
 #wrap-wrap {
-  #main-content {
-    background-image: 
-      linear-gradient(90deg, rgba(0,0,0,.5), rgba(0,0,0,.5)),
-      url(../media/img/main-bg-wave.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-  }
-  #page_me {
-    background-image: 
-      linear-gradient(90deg, rgba(255,255,255,.5), rgba(255,255,255,.5)),
-      url(../media/img/bg-me.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-  }
   #my-projects {
     #menu-button {
       a {
