@@ -6,8 +6,8 @@
 body,
 html {
   font-size: 18px;
-  font-family: 'Unica One', sans-serif, serif !important;
-  scroll-behavior: smooth !important; }
+  scroll-behavior: smooth !important;
+  font-family: 'consolas', sans-serif, serif; }
 
 h1, h2, h3, h4, h5, h6, p, span, code, pre {
   pointer-events: none !important; }
@@ -20,6 +20,26 @@ p a {
 
 .ws-none {
   white-space: nowrap; }
+
+.lh-08 {
+  line-height: 80%; }
+
+.lh-09 {
+  line-height: 90%; }
+
+.lh-1 {
+  line-height: 100%; }
+
+.sup-separator {
+  width: 25px;
+  height: 2px;
+  background: #fff; }
+
+.bg-black {
+  background: #000 !important; }
+
+.text-white-hover:hover {
+  color: #fff !important; }
 
 #wrap-wrap #main-content {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/main-bg-wave.jpg);
@@ -97,49 +117,5 @@ p a {
   overflow: hidden;
   transition: ease .5s;
   transition-delay: .05s; }
-
-#wrap-wrap #my-projects #menu-button a {
-  display: block; }
-  #wrap-wrap #my-projects #menu-button a div {
-    width: 30px;
-    height: 2px;
-    border: 1px solid #000;
-    margin: 5px 0;
-    transition: ease .3s all; }
-  #wrap-wrap #my-projects #menu-button a:hover div {
-    width: 28px;
-    margin: 7px 0; }
-    #wrap-wrap #my-projects #menu-button a:hover div:nth-child(2) {
-      width: 25px;
-      margin: auto; }
-#wrap-wrap #my-projects .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px; }
-  @media screen and (max-height: 450px) {
-    #wrap-wrap #my-projects .sidenav .sidenav {
-      padding-top: 15px; }
-      #wrap-wrap #my-projects .sidenav .sidenav a {
-        font-size: 18px; } }
-  #wrap-wrap #my-projects .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s; }
-    #wrap-wrap #my-projects .sidenav a:hover {
-      color: #f1f1f1; }
-  #wrap-wrap #my-projects .sidenav.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
