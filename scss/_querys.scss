@@ -1,0 +1,26 @@
+// md to up
+@media (min-width: 767px) {
+
+}
+// sm to up
+@media (min-width: 576px) {
+  
+}
+// defect on
+
+// sm to down
+
+// md to down
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+  nav {
+    ul {
+      width: 100%;
+      li {
+        text-align: center !important;
+      }
+    }
+  }
+}
