@@ -90,6 +90,9 @@ p a {
 @keyframes rotate_logo {
   100% {
     transform: rotateY(360deg); } }
+@media (max-width: 370px) {
+  .display-4 {
+    font-size: 2.5rem !important; } }
 @media (max-width: 576px) {
   .display-4 {
     font-size: 3rem; }

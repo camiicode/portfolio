@@ -1,16 +1,24 @@
 // md to up
-@media (min-width: 767px) {
+// @media (min-width: 767px) {
 
-}
+// }
 // sm to up
-@media (min-width: 576px) {
+// @media (min-width: 576px) {
   
-}
+// }
+// xs to up
+// @media (min-width: 576px) {
+  
+// }
 // defect on
 
+// xs to down
+@media (max-width: 370px) {
+  .display-4 {
+    font-size: 2.5rem !important;
+  }
+}
 // sm to down
-
-// md to down
 @media (max-width: 576px) {
   .display-4 {
     font-size: 3rem;
@@ -24,3 +32,7 @@
     }
   }
 }
+// md to down
+// @media (max-width: 767px) {
+
+// }
