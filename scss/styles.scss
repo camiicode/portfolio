@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Unica+One&display=swap');
 
+// Globals Styles
 @import "_globals.scss";
 @import "_bem.scss";
+@import "_logo.scss";
 
+// ANother Styles
 @import "_bg-images.scss";
-
 @import "_side-nav.scss";
