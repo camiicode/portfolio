@@ -3,9 +3,15 @@
 // Globals Styles
 @import "_globals.scss";
 @import "_bem.scss";
-@import "_logo.scss";
 @import "_querys.scss";
+
+// Logo Design itereaction
+@import "_logo.scss";
+@import "_preload.scss";
 
 // Main Styles
 @import "_bg-images.scss";
 @import "_side-nav.scss";
+
+// Miscelanous
+@import "_keyframes.scss";

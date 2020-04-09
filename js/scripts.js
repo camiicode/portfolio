@@ -61,3 +61,11 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+
+window.addEventListener("load", function(){
+        
+  var loader = document.getElementById("preload");
+
+  loader.classList.remove("active");
+
+});

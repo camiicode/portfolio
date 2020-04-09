@@ -41,6 +41,17 @@ p a {
 .text-white-hover:hover {
   color: #fff !important; }
 
+@media (max-width: 370px) {
+  .display-4 {
+    font-size: 2.5rem !important; } }
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 3rem; }
+
+  nav ul {
+    width: 100%; }
+    nav ul li {
+      text-align: center !important; } }
 .logo .rotating-logo {
   width: 25px;
   height: 25px;
@@ -90,17 +101,65 @@ p a {
 @keyframes rotate_logo {
   100% {
     transform: rotateY(360deg); } }
-@media (max-width: 370px) {
-  .display-4 {
-    font-size: 2.5rem !important; } }
-@media (max-width: 576px) {
-  .display-4 {
-    font-size: 3rem; }
+#preload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  background-color: transparent;
+  opacity: 0 !important; }
+  #preload.active {
+    animation: rotate_logo;
+    background: #fff;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    opacity: 1 !important; }
+  #preload .logo-preload .rotating-logo {
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+    perspective: 50px; }
+    #preload .logo-preload .rotating-logo .single-rl {
+      width: 25px;
+      transform-style: preserve-3d;
+      animation: rotate_logo linear infinite 2s; }
+      #preload .logo-preload .rotating-logo .single-rl > div {
+        background: #fff;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        border: 1px solid #000; }
+        #preload .logo-preload .rotating-logo .single-rl > div > img {
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        #preload .logo-preload .rotating-logo .single-rl > div:nth-child(1) {
+          transform: translateZ(12.5px); }
+        #preload .logo-preload .rotating-logo .single-rl > div:nth-child(2) {
+          transform: rotateY(180deg) translateZ(12.5px); }
+        #preload .logo-preload .rotating-logo .single-rl > div:nth-child(3) {
+          transform: rotateY(-90deg) translateX(-12.5px);
+          transform-origin: left; }
+        #preload .logo-preload .rotating-logo .single-rl > div:nth-child(4) {
+          transform: rotateY(90deg) translateX(12.5px);
+          transform-origin: right; }
+        #preload .logo-preload .rotating-logo .single-rl > div:nth-child(5) {
+          transform: rotateX(-90deg) translateY(-12.5px);
+          transform-origin: top; }
+        #preload .logo-preload .rotating-logo .single-rl > div:nth-child(6) {
+          transform: rotateX(90deg) translateY(12.5px);
+          transform-origin: bottom; }
 
-  nav ul {
-    width: 100%; }
-    nav ul li {
-      text-align: center !important; } }
 #wrap-wrap #main-content {
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/img/main-bg-wave.jpg);
   background-size: cover;
@@ -177,5 +236,9 @@ p a {
   overflow: hidden;
   transition: ease .5s;
   transition-delay: .05s; }
+
+@keyframes rotate_logo {
+  100% {
+    transform: rotateY(360deg); } }
 
 /*# sourceMappingURL=styles.css.map */
