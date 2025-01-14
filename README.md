@@ -3,7 +3,7 @@
 ¡Bienvenidos a mi portafolio web! Este proyecto es una representación de mis habilidades como desarrolladora web, diseñadora gráfica y creadora de contenido para marketing digital.
 
 ## 🚀 Descripción
-PhotoFolio es un portafolio web minimalista diseñado para mostrar mi trabajo y habilidades en desarrollo web, diseño gráfico y creación de contenido. Es una página web estática creada con las mejores prácticas para garantizar su optimización en dispositivos móviles y navegadores modernos.
+Este es un portafolio web minimalista diseñado para mostrar mi trabajo y habilidades en desarrollo web, diseño gráfico y creación de contenido. Es una página web estática creada con las mejores prácticas para garantizar su optimización en dispositivos móviles y navegadores modernos.
 
 ## 🌟 Características principales
 - **Diseño minimalista y profesional**: Enfocado en destacar los proyectos sin distracciones.
@@ -30,7 +30,7 @@ El portafolio incluye las siguientes secciones:
 5. **Contact**: Formulario de contacto y enlaces a mis redes sociales.
 
 ## 🌐 Demo en vivo
-Visita mi portafolio aquí: [PhotoFolio en GitHub Pages](https://camiicode.github.io/portfolio/)
+Visita mi portafolio aquí: [PortoFolio en GitHub Pages](https://camiicode.github.io/portfolio/)
 
 ## 📁 Instalación local
 Si deseas instalar este proyecto localmente, sigue estos pasos:
