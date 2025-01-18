@@ -840,10 +840,15 @@ section,
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  background-color: #000;
 }
 
 .gallery .gallery-item img {
   transition: 0.3s;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .gallery .gallery-links {
@@ -1024,7 +1029,24 @@ section,
 # Gallery Details Section
 --------------------------------------------------------------*/
 .gallery-details .portfolio-details-slider img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  min-height: 700px;
+  max-height: 700px;
+  object-fit: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.gallery-details .portfolio-details-slider video,
+.gallery-details .portfolio-details-slider iframe {
   width: 100%;
+  max-width: auto;
+  height: 700px;
 }
 
 .gallery-details .swiper-wrapper {

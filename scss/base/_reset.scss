@@ -2,3 +2,11 @@
 :root {
   scroll-behavior: smooth;
 }
+
+.swiper-slide {
+  img {
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+  }
+}
