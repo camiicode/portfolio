@@ -1,5 +1,7 @@
 // Abstracts
-@import "abstracts/variables";
+@import "abstracts/maps";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
 @import "abstracts/variables";
 
 // Base
@@ -9,10 +11,17 @@
 // Components
 @import "components/buttons";
 @import "components/dropdown";
+@import "components/hero";
+@import "components/keyframes";
+@import "components/page-titles";
+@import "components/pricing";
+@import "components/scroll-top";
+@import "components/testimonials";
 
 // Layout
-@import "layout/foot";
-@import "layout/nav";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/preloader";
 
 // Pages
 @import "pages/about";
@@ -21,3 +30,8 @@
 @import "pages/gallery";
 @import "pages/home";
 @import "pages/services";
+
+// Vendors
+@import "vendors/aos";
+@import "vendors/glightbox";
+@import "vendors/swiper";

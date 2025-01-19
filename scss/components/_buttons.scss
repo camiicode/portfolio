@@ -1,0 +1,36 @@
+.contact .php-email-form button[type=submit] {
+  color: var(--default-color);
+  background: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 40px;
+  border: 0;
+  border-radius: 4px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  :hover {
+    background-color: color-mix(in srgb, var(--accent-color) 90%, white 10%);
+  }
+}
+
+.gallery-details {
+  
+  .portfolio-info {
+
+    .btn-visit {
+      padding: 8px 40px;
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      border-radius: 50px;
+      transition: 0.3s;
+
+      :hover {
+        background: color-mix(in srgb, var(--accent-color), transparent 20%);
+      }
+    }
+  }
+}
