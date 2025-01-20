@@ -97,15 +97,15 @@
       box-shadow: none;
       border-radius: 0;
       color: var(--default-color);
-      background-color: var(--surface-color);
-      border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+      background-color: var(--tertiary-color);
+      border-color: color-mix(in srgb, var(--default-color), transparent 10%);
 
       &:focus {
         border-color: var(--accent-color);
       }
 
       &::placeholder {
-        color: color-mix(in srgb, var(--default-color), transparent 70%);
+        color: color-mix(in srgb, var(--default-color), transparent 40%);
       }
     }
 

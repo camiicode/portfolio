@@ -56,6 +56,10 @@
     }
   }
 
+  small {
+    color: var(--surface-color);
+  }
+
   img {
     transition: 0.3s;
     width: auto;

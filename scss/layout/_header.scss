@@ -8,12 +8,12 @@
 }
 
 .header {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
+  color: var(--accent-color);
+  background-color: #e9e8e6;
+  padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid var(--background-color);
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 
   .header .navmenu {
     @include mq("tablet-s", max) { 
@@ -35,7 +35,7 @@
       font-size: 32px;
       margin: 0;
       font-weight: 400;
-      color: var(--heading-color);
+      color: var(--default-color);
 
       @include mq("tablet-s", max) { 
         font-size: 26px; 
@@ -60,7 +60,7 @@
     }
     
     a {
-      color: color-mix(in srgb, var(--default-color), transparent 40%);
+      color: color-mix(in srgb, var(--accent-color), transparent 10%);
       padding-left: 6px;
       display: inline-block;
       transition: 0.3s;
@@ -129,7 +129,7 @@
         }
 
         .active:hover {
-          color: var(--nav-dropdown-hover-color);
+          color: var(--accent-color);
         }
       }
 
@@ -174,17 +174,18 @@
       &:hover > a,
       .active,
       .active:focus {
-        color: var(--nav-hover-color);
+        color: var(--accent-color);
+        font-weight: bold;
       }
 
     }
 
     a,
     a:focus {
-      color: var(--nav-color);
+      color: var(--accent-color);
       padding: 18px 15px;
       font-size: 14px;
-      font-family: var(--nav-font);
+      font-family: var(--accent-color);
       font-weight: 400;
       display: flex;
       align-items: center;

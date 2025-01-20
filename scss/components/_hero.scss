@@ -13,6 +13,7 @@
     margin: 0 0 10px 0;
     font-size: 38px;
     font-weight: 700;
+    color: color-mix(in srgb, var(--surface-color), transparent 30%);
 
     @include mq("tablet-xs", max) {
       font-size: 32px;
@@ -38,7 +39,7 @@
   }
 
   p {
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    color: color-mix(in srgb, var(--surface-color), transparent 5%);
     margin-bottom: 30px;
     font-size: 18px;
   }

@@ -12,7 +12,7 @@
   &:before,
   &:after {
     content: "";
-    background-color: #000000;
+    background-color: var(--primary-color);
     position: absolute;
     inset: 0;
     width: 50%;
