@@ -82,10 +82,13 @@ section,
   }
 
   p {
-    color: var(--heading-color);
+    color: rgba(#000, .75);
     margin: 0;
-    font-size: 36px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 400;
     font-family: var(--heading-font);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }

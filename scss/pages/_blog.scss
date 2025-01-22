@@ -1,0 +1,64 @@
+.card-post {
+  transition: ease-in-out .2s all;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+  display: block;
+  background-color: var(--tertiary-color);
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,.25);
+    transform: scale(1.01);
+
+    .card-post__overlay {
+      opacity: 1;
+    }
+  }
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: #fff;
+  }
+
+  &__overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($primary-color,.75);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 0rem 1rem;
+
+    h2 {
+      text-align: left;
+      color: var(--tertiary-color);
+      font-size: 1rem;
+      line-height: 1rem;
+      position: relative;
+      font-weight: bold;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        border-top: 2px solid var(--tertiary-color);
+      }
+    }
+  }
+}
