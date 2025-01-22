@@ -24,6 +24,12 @@
     object-fit: cover;
     object-position: center;
     background-color: #fff;
+
+    @include mq("phone-m", max) {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   &__overlay {
@@ -41,6 +47,9 @@
     align-items: flex-end;
     padding: 0rem 1rem;
 
+    @include mq("tablet-l", max) { opacity: 1 !important; }
+    @media     (pointer: coarse) { opacity: 1 !important; }
+
     h2 {
       text-align: left;
       color: var(--tertiary-color);
@@ -48,6 +57,10 @@
       line-height: 1rem;
       position: relative;
       font-weight: bold;
+
+      @include mq("phone-m", max) {
+        margin-bottom: 1rem;
+      }
 
       &::before {
         content: "";

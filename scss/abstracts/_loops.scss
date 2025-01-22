@@ -1,0 +1,17 @@
+@import "./variables";
+@import "./maps";
+
+@mixin generate-color-classes($colors, $type) {
+  @each $name, $color in $colors {
+    .#{$type}-#{$name} {
+      @if $type == 'c-text' {
+        color: $color !important;
+      } @else if $type == 'c-bg' {
+        background-color: $color !important;
+      }
+    }
+  }
+}
+
+@include generate-color-classes($color-variables, 'c-text');
+@include generate-color-classes($color-variables, 'c-bg');

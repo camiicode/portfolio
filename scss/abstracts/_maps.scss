@@ -26,3 +26,9 @@ $breakpoints: (
   "desktop-xxl":               1980px
   
 );
+
+$color-variables: (
+  primary: $primary-color,
+  secondary: $secondary-color,
+  tertiary: $tertiary-color
+);
