@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Página principal -->
+  <!-- Main Page -->
   <url>
     <loc>https://camiicode.github.io/portfolio/</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>  
-  <!-- Secciones principales (ajusta según tu portafolio) -->
+  <!-- Secondary Pages -->
   <url>
     <loc>https://camiicode.github.io/portfolio/about.html</loc>
     <lastmod>2025-01-21</lastmod>
@@ -32,11 +32,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <!-- Proyectos individuales (añade más según corresponda) -->
+  <!-- Project Pages -->
   <url>
     <loc>https://camiicode.github.io/portfolio/projects/asomedios.html</loc>
     <lastmod>2025-01-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <!-- Article Pages -->
+  <url>
+    <loc>https://camiicode.github.io/portfolio/post/css-lenguaje-programacion.html</loc>
+    <lastmod>2025-01-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
