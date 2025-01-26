@@ -172,29 +172,27 @@
             </div>
           </div>
 
-          <form action="./forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
-            <div class="row gy-4">
+          <hr class="c-text-primary mb-5 mt-3">
 
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Tu Nombre" required="">
-              </div>
-
-              <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Tu Email" required="">
-              </div>
-
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Como te puedo ayudar ?" required=""></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                <button type="submit">Send Message</button>
-              </div>
-
+          <form action="https://formspree.io/f/xqaeebjq" class="fs-form" target="_top" method="POST">
+            <div class="fs-field">
+              <strong><label class="fs-label c-text-primary" for="name">Tu Nombre</label></strong>
+              <input class="fs-input" id="name" name="name" required placeholder="Tu Nombre" />
+            </div>
+            <div class="fs-field">
+              <strong><label class="fs-label c-text-primary" for="email">Tu Correo Electronico</label></strong>
+              <input class="fs-input" id="email" name="email" required placeholder="Tu correo Electronico" />
+              <p class="fs-description">
+                Esto me permitira responderte con mas rapidez por medio de tu correo electronico
+              </p>
+            </div>
+            <div class="fs-field">
+              <strong><label class="fs-label c-text-primary" for="message">Mensaje</label></strong>
+              <textarea class="fs-textarea" id="message" name="message" required placeholder="Como te puedo colaborar?"></textarea>
+              <p class="fs-description">Estoy aquí para ayudarte con lo que necesites. No importa si estás buscando colaborar en un proyecto específico, necesitas orientación en algo relacionado con mis servicios o simplemente estás explorando opciones para trabajar conmigo. ¡No dudes en escribirme!</p>
+            </div>
+            <div class="fs-button-group">
+              <button class="fs-button c-bg-primary rounded-2" type="submit">Enviar</button>
             </div>
           </form><!-- End Contact Form -->
 
