@@ -63,6 +63,7 @@
       line-height: 1rem;
       position: relative;
       font-weight: bold;
+      padding-bottom: 1rem;
 
       @include mq("phone-m", max) {
         margin-bottom: 1rem;
