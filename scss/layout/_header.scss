@@ -343,3 +343,50 @@
     }
   }
 }
+/*--------------------------------------------------------------
+# Select Language
+--------------------------------------------------------------*/
+.header-social-lang {
+
+  &:has(.header-select-lang details[open]) {
+    .header-select-lang {
+      position: absolute;
+      top: 75%;
+      right: 15px;
+      transform: translateY(-50%);
+    }
+    .header-social-links {
+      margin-right: 60px;
+    }
+  }
+
+  .header-select-lang {
+    display: inline-block;
+    border: 1px solid var(--primary-color);
+    border-radius: 15px;
+    margin-left: 1rem;
+    position: relative;
+    background-color: $tertiary-color;
+  
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--light-color);
+  
+      summary, a {
+        color: $light-color;
+      }
+    }
+  
+    details {
+      text-align: center;
+
+      summary, a {
+        padding: 5px 10px;
+        &::marker {
+          content: "";
+        }
+      }
+    }
+  
+  }
+}
