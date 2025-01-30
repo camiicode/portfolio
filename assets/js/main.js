@@ -138,9 +138,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Si el usuario ya ha elegido un idioma, no forzamos la redirección
   if (!storedLang) {
       if (userLang.startsWith("en") && !currentPath.startsWith("/en")) {
-          window.location.href = "/en" + currentPath;
+          window.location.href = "./en" + currentPath;
       } else if (userLang.startsWith("es") && currentPath.startsWith("/en")) {
-          window.location.href = "/" + currentPath.replace("/en", "");
+          window.location.href = "../" + currentPath.replace("/en", "");
       }
   }
 });
