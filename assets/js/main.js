@@ -126,3 +126,29 @@
   window.addEventListener("load", initSwiper);
 
 })();
+
+/**
+ * Redirect to english, if english is default
+ */
+document.addEventListener("DOMContentLoaded", function () {
+  const userLang = navigator.language || navigator.userLanguage; // Idioma del navegador
+  const currentPath = window.location.pathname; // Ruta actual
+  const storedLang = localStorage.getItem("selectedLanguage"); // Idioma guardado en localStorage
+
+  // Si el usuario ya ha elegido un idioma, no forzamos la redirección
+  if (!storedLang) {
+      if (userLang.startsWith("en") && !currentPath.startsWith("/en")) {
+          window.location.href = "/en" + currentPath;
+      } else if (userLang.startsWith("es") && currentPath.startsWith("/en")) {
+          window.location.href = "/" + currentPath.replace("/en", "");
+      }
+  }
+});
+
+// Guarda la elección del usuario cuando cambia el idioma
+document.querySelectorAll(".header-select-lang a").forEach(link => {
+  link.addEventListener("click", function () {
+      const lang = this.getAttribute("href").includes("/en") ? "en" : "es";
+      localStorage.setItem("selectedLanguage", lang); // Guarda la preferencia
+  });
+});
