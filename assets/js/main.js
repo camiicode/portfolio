@@ -135,12 +135,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentPath = window.location.pathname; // Ruta actual
   const storedLang = localStorage.getItem("selectedLanguage"); // Idioma guardado en localStorage
 
+  // Normaliza la ruta eliminando barras al final
+  const normalizedPath = currentPath.replace(/\/$/, "");
+
   // Si el usuario ya ha elegido un idioma, no forzamos la redirección
   if (!storedLang) {
-      if (userLang.startsWith("en") && !currentPath.startsWith("/en")) {
-          window.location.href = "./en" + currentPath;
-      } else if (userLang.startsWith("es") && currentPath.startsWith("/en")) {
-          window.location.href = "../" + currentPath.replace("/en", "");
+      if (userLang.startsWith("en") && !normalizedPath.startsWith("/portfolio/en")) {
+          window.location.href = "/portfolio/en" + normalizedPath.replace("/portfolio", "");
+      } else if (userLang.startsWith("es") && normalizedPath.startsWith("/portfolio/en")) {
+          window.location.href = "/portfolio" + normalizedPath.replace("/portfolio/en", "");
       }
   }
 });
