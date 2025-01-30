@@ -134,16 +134,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const userLang = navigator.language || navigator.userLanguage; // Idioma del navegador
   const currentPath = window.location.pathname; // Ruta actual
   const storedLang = localStorage.getItem("selectedLanguage"); // Idioma guardado en localStorage
+  const isLocalhost = window.location.origin.includes("localhost") || window.location.origin.includes("127.0.0.1") || window.location.protocol === "file:";
 
-  // Normaliza la ruta eliminando barras al final
-  const normalizedPath = currentPath.replace(/\/$/, "");
+  // Si está en localhost o abriendo el archivo directamente, no redirecciona
+  if (isLocalhost) return;
 
   // Si el usuario ya ha elegido un idioma, no forzamos la redirección
   if (!storedLang) {
-      if (userLang.startsWith("en") && !normalizedPath.startsWith("/portfolio/en")) {
-          window.location.href = "/portfolio/en" + normalizedPath.replace("/portfolio", "");
-      } else if (userLang.startsWith("es") && normalizedPath.startsWith("/portfolio/en")) {
-          window.location.href = "/portfolio" + normalizedPath.replace("/portfolio/en", "");
+      if (userLang.startsWith("en") && !currentPath.startsWith("/en")) {
+          window.location.href = "./en" + currentPath;
+      } else if (userLang.startsWith("es") && currentPath.startsWith("/en")) {
+          window.location.href = "../" + currentPath.replace("/en", "");
       }
   }
 });
